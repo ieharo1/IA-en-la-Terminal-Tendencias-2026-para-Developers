@@ -1,175 +1,115 @@
 # 🧠 IA en la Terminal — Tendencias 2026 para Developers
 
-> **Guía práctica y comparativa de CLIs de IA para desarrollo moderno**
+Guía práctica y comparativa de CLIs de IA para desarrollo moderno desarrollada por **Isaac Esteban Haro Torres**.
 
-Este repositorio recopila y explica **las principales herramientas de Inteligencia Artificial que viven en la terminal**, una tendencia clara en 2024–2026: **menos UI, más productividad real**.
+---
 
-Aquí no hay teoría vacía. Hay **herramientas reales**, casos de uso y cuándo usar cada una.
+## 📝 Descripción
+
+Este repositorio recopila y explica las principales herramientas de Inteligencia Artificial que viven en la terminal, una tendencia clara en 2024–2026: menos UI, más productividad real.
+
+Aquí no hay teoría vacía. Hay herramientas reales, casos de uso y cuándo usar cada una.
 
 ---
 
 ## 🚀 ¿Por qué IA en la terminal?
 
-Los devs ya viven en la terminal:
+Los devs ya viven en la terminal: Git, Docker, SSH, CI/CD, Backend.
 
-* Git
-* Docker
-* SSH
-* CI/CD
-* Backend
-
-La nueva generación de IA **no reemplaza tu flujo**, se integra:
-
-* entiende repos reales
-* ejecuta comandos
-* modifica código
-* razona sobre arquitectura
+La nueva generación de IA se integra:
+- Entiende repos reales
+- Ejecuta comandos
+- Modifica código
+- Razona sobre arquitectura
 
 ---
 
 ## 🧩 Categorías de CLIs de IA
 
 ### 1️⃣ IA local (offline / privada)
-
-* Ollama
-* Aider
-* Open-source
+- Ollama
+- Aider
+- Open-source
 
 ### 2️⃣ IA cloud (rápida / productiva)
-
-* Claude CLI
-* Gemini CLI
-* OpenAI CLI
+- Claude CLI
+- Gemini CLI
+- OpenAI CLI
 
 ### 3️⃣ IA agentic (autónoma / bots)
-
-* MoltBot
-* DevBots
+- MoltBot
+- DevBots
 
 ---
 
 ## 🐘 Ollama — IA local en la terminal
 
-### ¿Qué es?
+Motor para ejecutar LLMs localmente desde la terminal.
 
-Motor para ejecutar **LLMs localmente** desde la terminal.
+**Qué lo hace fuerte:**
+- Privacidad total
+- Sin APIs
+- Sin límites
+- Funciona offline
 
-### Qué lo hace fuerte
-
-* privacidad total
-* sin APIs
-* sin límites
-* funciona offline
-
-### Casos ideales
-
-* refactors grandes
-* código sensible
-* empresas
-* pruebas de arquitectura
-
-### Ejemplo
-
-```bash
-ollama pull deepseek-coder:latest
-ollama run deepseek-coder:latest
-```
+**Casos ideales:**
+- Refactors grandes
+- Código sensible
+- Empresas
+- Pruebas de arquitectura
 
 ---
 
 ## 🧠 Aider — IA que entiende tu repo
 
-### ¿Qué es?
-
 CLI que conecta un LLM con tu repositorio Git.
 
-### Qué puede hacer
-
-* analizar estructura
-* proponer mejoras
-* modificar archivos
-* generar código multiarchivo
-
-### Stack típico
-
-```
-Aider + Ollama = Claude Code local y gratis
-```
+**Qué puede hacer:**
+- Analizar estructura
+- Proponer mejoras
+- Modificar archivos
+- Generar código multiarchivo
 
 ---
 
 ## ☁️ Claude CLI — El referente
 
-### ¿Qué es?
+CLI oficial basado en Claude.
 
-CLI oficial/no-oficial basado en Claude.
-
-### Fortalezas
-
-* razonamiento superior
-* excelente para diseño
-* entiende contexto grande
-
-### Debilidades
-
-* requiere API
-* costo
-* dependencia cloud
-
-👉 Inspiró toda esta tendencia.
+**Fortalezas:**
+- Razonamiento superior
+- Excelente para diseño
+- Entiende contexto grande
 
 ---
 
 ## ⚡ Gemini CLI — Velocidad pura
 
-### ¿Qué es?
-
 CLI de Google para interactuar con Gemini desde la terminal.
 
-### Por qué destaca
-
-* extremadamente rápido
-* setup mínimo
-* ideal para proyectos pequeños
-
-### Ejemplo
-
-```bash
-gemini chat
-```
+**Por qué destaca:**
+- Extremadamente rápido
+- Setup mínimo
+- Ideal para proyectos pequeños
 
 ---
 
 ## 🤖 MoltBot — La nueva tendencia (Agentic AI)
 
-### ¿Qué es MoltBot?
+Un AI Agent orientado a tareas completas, no solo respuestas.
 
-Un **AI Agent** orientado a tareas completas, no solo respuestas.
-
-No responde: **actúa**.
-
-### Qué lo hace diferente
-
-* ejecuta workflows
-* toma decisiones
-* opera como bot autónomo
-* integra tools
-
-### Casos de uso
-
-* mantenimiento de repos
-* análisis continuo
-* generación de features
-* DevOps
-
-👉 Es la evolución natural del CLI de IA.
+**Qué lo hace diferente:**
+- Ejecuta workflows
+- Toma decisiones
+- Opera como bot autónomo
+- Integra tools
 
 ---
 
 ## 🧠 Comparativa rápida
 
 | Herramienta | Local | Gratis | Rápida | Autonomía |
-| ----------- | ----- | ------ | ------ | --------- |
+|-------------|-------|--------|--------|-----------|
 | Ollama      | ✅     | ✅      | ❌      | ❌         |
 | Aider       | ✅     | ✅      | ⚠️     | ⚠️        |
 | Gemini CLI  | ❌     | ⚠️     | ✅      | ❌         |
@@ -180,43 +120,22 @@ No responde: **actúa**.
 
 ## 🧪 Cómo elegir la correcta
 
-### Proyecto pequeño
-
-👉 Gemini CLI
-
-### Proyecto grande / sensible
-
-👉 Ollama + Aider
-
-### Arquitectura / diseño
-
-👉 Claude
-
-### Automatización total
-
-👉 MoltBot
+- **Proyecto pequeño:** Gemini CLI
+- **Proyecto grande / sensible:** Ollama + Aider
+- **Arquitectura / diseño:** Claude
+- **Automatización total:** MoltBot
 
 ---
 
-## 🔮 Tendencia clara 2026
+## 👨‍💻 Desarrollado por Isaac Esteban Haro Torres
 
-* menos chat
-* más agentes
-* más terminal
-* más contexto real
-* menos copy/paste
+**Ingeniero en Sistemas · Full Stack · Automatización · Data**
 
-La IA deja de ser "asistente" y pasa a ser **colaborador técnico**.
-
----
-
-## 🧑‍💻 Autor
-
-Isaac Haro
-Ingeniero en Sistemas · Full Stack · Automatización · Data
+- 📧 Email: zackharo1@gmail.com
+- 📱 WhatsApp: 098805517
+- 💻 GitHub: https://github.com/ieharo1
+- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
 
 ---
 
-## 📄 Licencia
-
-MIT — contribuciones bienvenidas 🚀
+© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
